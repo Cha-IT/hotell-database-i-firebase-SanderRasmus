@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel Oppgave - Sander</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <section id="Rom-Section">
+      <div>
+        <select class="Selektor" id="Etasje-Filter">
+          <option value="">Velg Etasje</option>
+          <option value="1">Etasje 1</option>
+          <option value="2">Etasje 2</option>
+        </select>
+        <select class="Selektor" id="Sengeplass-Filter">
+          <option value="">Velg Sengeplasser</option>
+          <option value="1">1 Seng</option>
+          <option value="2">2 Senger</option>
+          <option value="3">3+ Senger</option>
+        </select>
+        <select class="Selektor" id="RomType-Filter">
+          <option value="">Velg Type rom</option>
+          <option value="Single">Single</option>
+          <option value="Dobbel">Dobbel</option>
+          <option value="Suite">Suite</option>
+        </select>
+        <select class="Selektor" id="Tilgjengelig-Filter">
+          <option value="">Tilgjengelighet</option>
+          <option value="1">Ledig</option>
+          <option value="2">Opptatt</option>
+        </select>
+      </div>
+      <div id="Rom-Container"></div>
+    </section>
+
+    <script type="module" src="/firebaseConfig.js"></script>
+    <script type="module" src="/hotel.js"></script>
+  </body>
+</html>
