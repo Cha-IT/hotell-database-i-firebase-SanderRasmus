@@ -9,12 +9,28 @@
   <body>
     <section id="Rom-Section">
       <div>
-        <button class="FilterBtn" id="Etasje1">Etasje 1</button>
-        <button class="FilterBtn" id="Etasje2">Etasje 2</button>
-        <button class="FilterBtn" id="1Seng">1 Sengeplasser</button>
-        <button class="FilterBtn" id="2Seng">2 Sengeplasser</button>
-        <button class="FilterBtn" id="AlleRom">Alle Rom</button>
-        <button class="FilterBtn" id="LedigeRom">Ledige Rom</button>
+        <select class="Selektor" id="Etasje-Filter">
+          <option value="">Velg Etasje</option>
+          <option value="1">Etasje 1</option>
+          <option value="2">Etasje 2</option>
+        </select>
+        <select class="Selektor" id="Sengeplass-Filter">
+          <option value="">Velg Sengeplasser</option>
+          <option value="1">1 Seng</option>
+          <option value="2">2 Senger</option>
+          <option value="3">3+ Senger</option>
+        </select>
+        <select class="Selektor" id="RomType-Filter">
+          <option value="">Velg Type rom</option>
+          <option value="Single">Single</option>
+          <option value="Dobbel">Dobbel</option>
+          <option value="Suite">Suite</option>
+        </select>
+        <select class="Selektor" id="Tilgjengelig-Filter">
+          <option value="">Tilgjengelighet</option>
+          <option value="1">Ledig</option>
+          <option value="2">Opptatt</option>
+        </select>
       </div>
       <div id="Rom-Container"></div>
     </section>
